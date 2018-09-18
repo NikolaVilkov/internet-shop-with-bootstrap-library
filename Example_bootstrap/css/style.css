@@ -1,0 +1,292 @@
+/*===============General Rules==========================*/
+body {
+    background: #ececec;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #000;
+    min-width: 320px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.btn-red {
+    background: #d51e08;
+    color: #fff;
+}
+.btn-red:hover {
+    background: #ec4835;
+}
+
+/*============================Header==============================*/
+.menu-top .navbar {
+    margin-bottom: 0;
+    background: #fff;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+.menu-top .navbar-light .navbar-nav> li> a {
+    color: #000;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: background .3s;
+}
+.menu-top .navbar-light .navbar-nav> li> a:hover {
+    text-decoration: underline;
+}
+.menu-top .navbar-light .navbar-nav> li> a.btn-red {
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.menu-top .navbar-light .navbar-nav> li> a.btn-red:hover {
+    background: #ec4835;
+    text-decoration: none;
+}
+.menu-top .navbar-light .navbar-nav > li > a.btn-red img {
+    margin-right: 10px;
+}
+.menu-top .container,
+.menu-top .navbar-collapse {
+    padding-left: 0;
+}
+.flag {
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+}
+.carousel.fade {
+    opacity: 1;
+}
+.carousel.fade .carousel-item {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carousel.fade .carousel-item.active {
+    opacity: 1;
+    position: relative;
+}
+ .menu-carousel .carousel-caption {
+     left: 0;
+     top: 170px;
+ }
+.menu-carousel .carousel-caption h1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+.menu-carousel .carousel-caption h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.menu-carousel .carousel-caption .btn-red {
+    padding: 20px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+.carousel-indicator-wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.carousel-indicator-wrap .carousel-indicators {
+    margin-left: 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: auto;
+}
+.main-menu .container {
+    background: transparent;
+    border: none;
+}
+.main-menu .navbar-toggler {
+    z-index: 30;
+}
+.main-menu .navbar {
+    background: #000;
+}
+.main-menu .navbar-expand-lg .navbar-nav > li > a{
+    color: #fff;
+    font-size: 16px;
+    transition: background .5s;
+}
+.main-menu .navbar-expand-lg .navbar-nav > li > a:hover {
+    text-decoration: underline;
+}
+.menu-carousel .main-menu .navbar-brand {
+    padding: 0;
+    margin-left: 30px;
+}
+.main-menu .navbar-brand img{
+    float: left;
+}
+.main-menu .navbar-brand span{
+    display: inline-block;
+    padding-top: 55px;
+    padding-left: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+.input-group-btn .btn {
+    padding: 0;
+}
+.main-slogan {
+    background: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #cfcfcf ;
+    border-bottom: 3px solid #dadada;
+}
+.main-slogan h1 {
+font-size: 30px;
+    margin: 0;
+}
+/*========================content=========================*/
+.main-slogan{
+    background: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 3px solid #dadada;
+}
+.main-slogan h1{
+    font-size: 30px;
+    margin: 0;
+}
+
+.sidebar{
+    padding: 50px 0 70px;
+    border-right: 3px solid #dadada;
+}
+.widget{
+    border-bottom: 3px solid #dadada;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.widget h3,
+.content h3{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.widget ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.widget ul li a{
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+}
+.widget ul li.more a{
+    color: #358acd;
+}
+.content{
+    padding: 50px 0 70px;
+}
+
+
+
+
+
+
+
+/* Large devices, Wide screen*/
+@media only screen and (max-width: 1200px){
+    .menu-top .navbar-nav,
+    .main-menu .navbar-nav{
+        float: none !important;
+    }
+}
+
+/* Medium devices, Desctops*/
+@media only screen and (max-width: 992px){
+        .menu-carousel .carousel-caption {
+            left: 20%;
+        }
+        .menu-carousel .carousel-caption h1 {
+            font-size: 40px;
+        }
+        .menu-carousel .carousel-caption h3 {
+            font-size: 22px;
+        }
+    .sidebar{
+        padding-bottom: 0;
+        padding-top: 0;
+        border-right: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* small devices, Tablets*/
+@media only screen and (max-width: 768px){
+
+    .menu-carousel .carousel-caption {
+        left: 20%;
+    }
+    .menu-carousel .carousel-caption h1 {
+        font-size: 36px;
+    }
+    .menu-carousel .carousel-caption h3 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .menu-top .container,
+    .menu-top .navbar-collapse {
+        padding-left: 15px;
+    }
+    .menu-carousel .carousel-caption .btn-red {
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .main-menu .navbar-brand img{
+        max-height: 50px;
+    }
+    .main-menu .navbar-toggle.collapsed + .navbar-brand img{
+        max-height: none;
+        position: relative;
+        z-index: 20;
+    }
+}
+
+/* Extra small devices, Phones*/
+@media only screen and (max-width: 320px){
+    .menu-carousel .carousel-caption .btn-red {
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 12px;
+    }
+    .menu-carousel .carousel-caption {
+        top: 10px;
+    }
+    .menu-carousel .carousel-caption h1 {
+        font-size: 14px;
+    }
+    .menu-carousel .carousel-caption h3 {
+        font-size: 12px;
+    }
+    .main-menu .navbar-brand img{
+        display: none;
+}
